@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exersise no 3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        var today = new Date();
+var dd = today.getDate();
+
+var mm = today.getMonth()+1; 
+var yyyy = today.getFullYear();
+if(dd<10) 
+{
+    dd='0'+dd;
+} 
+
+if(mm<10) 
+{
+    mm='0'+mm;
+} 
+today = mm+'-'+dd+'-'+yyyy;
+document.write(today);
+today = mm+'/'+dd+'/'+yyyy;
+document.write(today);
+today = dd+'-'+mm+'-'+yyyy;
+document.write(today);
+today = dd+'/'+mm+'/'+yyyy;
+document.write(today);
+    </script>
+    <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

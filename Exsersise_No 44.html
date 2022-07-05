@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Ex_No 44
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function rearrangement_characters(str1, str2) {
+
+var first_set = str1.split(''),
+    second_set = str2.split(''),
+    result = true;
+
+first_set.sort();
+second_set.sort();
+
+for (var i = 0; i < Math.max(first_set.length, second_set.length); i++) {
+  if (first_set[i] !== second_set[i]) {
+    result = false;
+  }
+}
+
+return result;
+}
+
+document.write(rearrangement_characters("xyz", "zyx"))
+document.write(rearrangement_characters("xyz", "zyp"))
+
+    </script>
+      <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

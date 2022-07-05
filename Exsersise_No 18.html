@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Ex_No 18
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function remove_character(str, char_pos) 
+ {
+  part1 = str.substring(0, char_pos);
+  part2 = str.substring(char_pos + 1, str.length);
+  return (part1 + part2);
+ }
+document.write(remove_character("Python",0));
+document.write(remove_character("Python",3));
+document.write(remove_character("Python",5));
+
+    </script>
+      <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

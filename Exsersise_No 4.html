@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exsersiser No 4</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="container  mt-5 mx-auto" style="width: 400px;">
+        <div class="row">
+            <h2>Calculate Area</h2>
+            
+                    Enter Height: <input type="text" class="mt-5" id="Height" placeholder="Height"><br>
+                    Enter widths: <input type="text" class="mt-5" id="widths" placeholder="widths"><br>
+                    Enter Length: <input type="text" class="mt-5" id="Length" placeholder="Length"><br>
+                    <button class="ms-5" onclick="CalculateArea()"> Calculate Area</button>
+
+                    <p class="text-center mt-5" id="result"></p>
+                </div>
+             </div>
+   <script>
+     function CalculateArea() {
+            num1 = document.getElementById("Height").value;
+            num2 = document.getElementById("widths").value;
+            num3 = document.getElementById("Length").value;
+            document.getElementById("result").innerHTML = 'Calculated area is :: '+(num1 + num2 + num3)/2 +' cm';
+          area =  Math.sqrt(perimeter*((perimeter-num1)*(perimeter-num2)*(perimeter-num3)));
+    document.write(area);
+        }
+   </script>
+   <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

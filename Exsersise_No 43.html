@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Ex_No 43
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function change_case(new_str) {
+  var x = 0;
+  var y = 0;
+
+  for (var i = 0; i < new_str.length; i++) {
+    if (/[A-Z]/.test(new_str[i])) {
+      x++;
+    } else y++;
+  }
+
+  if (y > x) return new_str.toLowerCase();
+  return new_str.toUpperCase();
+}
+
+document.write(change_case("Write"))
+document.write(change_case("PHp"))
+
+    </script>
+      <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

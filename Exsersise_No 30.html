@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Exsersise_No 30
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function checking_numbers(x, y, divisor) {
+  if(x % divisor === 0 && y % divisor === 0 || x % divisor !== 0 && y % divisor !==
+    0) {
+    return true;
+  }
+  return false;
+}
+
+document.write(checking_numbers(10, 25, 5))
+document.write(checking_numbers(10, 20, 5))
+document.write(checking_numbers(10, 20, 4))
+
+
+    </script>
+      <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

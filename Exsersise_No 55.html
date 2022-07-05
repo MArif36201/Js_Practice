@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Ex_No 55
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function is_identity_Matrix(matrix_data) {
+//Checks whether given matrix is a square matrix or not
+for (var i = 0; i < matrix_data.length; i++)
+  {
+    rows = matrix_data.length;
+cols = matrix_data[i].length;
+if(rows != cols)
+  {
+   console.log("Matrix should be a square matrix");
+   return false;
+  }
+  }
+  for (var i = 0; i < matrix_data.length; i++)
+   {
+    for (var j = 0; j < matrix_data.length; j++)
+     {
+      if (matrix_data[i][j] !== 1 && i === j || matrix_data[i][j] && i !== j)
+      {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+document.write(is_identity_Matrix([[1, 0, 0, 2], [0, 1, 0], [0, 0, 1]]))
+document.write(is_identity_Matrix([[1, 0, 0],  [0, 1, 0],  [0, 0, 1]]))
+document.write(is_identity_Matrix([[1, 0, 1],  [0, 1, 0],  [0, 0, 1]])) 
+
+    </script>  <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Ex_N0 47
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function number_of_InversionsNaive(arr) {
+    var ctr = 0;
+    for (var i = 0; i < arr.length; i++) {
+        for (var j = i + 1; j < arr.length; j++) {
+            if (arr[i] > arr[j]) 
+              ctr++;
+        }
+    }
+    return ctr;
+}
+
+document.write(number_of_InversionsNaive([0, 3, 2, 5, 9]));   
+document.write(number_of_InversionsNaive([1, 5, 4, 3]));   
+document.write(number_of_InversionsNaive([10, 30, 20, -10]));  
+
+    </script>
+      <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

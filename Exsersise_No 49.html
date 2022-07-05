@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Ex_No 49
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function different_values(ara, n) {
+    var max_val = -1;
+    for (var i = 0; i < ara.length; i++) {
+        for (var j = i + 1; j < ara.length; j++) {
+            var x = Math.abs(ara[i] - ara[j]);
+            if (x <= n) {
+                max_val = Math.max(max_val, x)
+            }
+        }
+    }
+    return max_val
+}
+document.write(different_values([12, 10, 33, 34], 10));
+document.write(different_values([12, 10, 33, 34], 24));
+document.write(different_values([12, 10, 33, 44], 40));
+
+    </script>
+      <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

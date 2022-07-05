@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Ex_No 53
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function trailing_zeros_factorial(n) {
+    var result = 0;
+    for (var i = 5; i <= n; i += 5) {
+        var num = i;
+        while (num % 5 === 0) {
+            num /= 5;
+            result++;
+        }
+    }
+    return result;
+}
+
+document.write(trailing_zeros_factorial(8))
+document.write(trailing_zeros_factorial(9))
+document.write(trailing_zeros_factorial(10))
+
+    </script>
+      <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

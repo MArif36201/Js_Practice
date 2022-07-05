@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Ex_No 42
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function build_Palindrome(new_str) {
+  var flag;
+  for (var i = new_str.length;; i++) {
+    flag = true;
+    for (var j = 0; j < i - j - 1; j++) {
+      if (i - j - 1 < new_str.length && new_str[j] != new_str[i - j - 1]) {
+        flag = false;
+        break;
+      }
+    }
+    if (flag) {
+      for (var j = new_str.length; j < i; j++) {
+        new_str += new_str[i - j - 1];
+      }
+      return new_str;
+    }
+  }
+}
+
+document.write(build_Palindrome("abcddc"))
+document.write(build_Palindrome("122"))
+
+    </script>
+      <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

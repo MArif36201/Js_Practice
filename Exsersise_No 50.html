@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Ex_NO 50
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function digit_to_one(num) {
+
+var digitSum = function(num) {
+
+    var digit_sum = 0;
+    while (num) {
+        digit_sum += num % 10;
+        num = Math.floor(num / 10);
+    }
+
+    return digit_sum;
+};
+
+var result = 0;
+
+while (num >= 10) {
+    result += 1;
+    num = digitSum(num);
+}
+
+return result;
+}
+
+document.write(digit_to_one(123))
+document.write(digit_to_one(156))
+
+    </script>
+      <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Ex_No 45
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function check_common_element(arra1, arra2) {
+  for (var i = 0; i < arra1.length; i++)
+  {
+    if (arra2.indexOf(arra1[i]) != -1) 
+      return true;
+  }
+  return false;
+}
+document.write(check_common_element([1,2,3], [3,4,5]));   
+document.write(check_common_element([1,2,3], [5,6,7]));   
+
+    </script>
+      <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

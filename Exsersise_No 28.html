@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Ex_No 28
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function angle_Type(angle) {
+  if(angle < 90) {
+    return "Acute angle.";
+  }
+  if(angle === 90) {
+    return "Right angle.";
+  }
+  if(angle < 180) {
+    return "Obtuse angle.";
+  }
+  return "Straight angle.";
+}
+
+document.write(angle_Type(47))
+document.write(angle_Type(90))
+document.write(angle_Type(145))
+document.write(angle_Type(180))
+
+    </script>
+      <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

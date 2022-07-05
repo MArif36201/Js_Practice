@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Ex_No 19
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function near_100(x, y) {
+  if (x != y)
+  {
+  x1 = Math.abs(x - 100);
+  y1 = Math.abs(y - 100);
+
+  if (x1 < y1)
+  {
+    return x;
+  }
+  if (y1 < x1)
+  {
+    return y;
+  }
+  return 0;
+  }
+  else
+    return false;
+}
+
+document.write(near_100(90, 89));
+document.write(near_100(-90, -89));
+document.write(near_100(90, 90));
+
+    </script>
+      <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

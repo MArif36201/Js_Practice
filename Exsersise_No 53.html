@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Ex_No 53
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function int_sum(num) {
+    var s_sum = 0;
+    while (num > 0) {
+        s_sum += num;
+        num = Math.floor(num / 2);
+    }
+    return s_sum;
+}
+document.write(int_sum(8))
+document.write(int_sum(9))
+document.write(int_sum(26))
+
+    </script>
+      <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>
