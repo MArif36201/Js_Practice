@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Ex_N0 66
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function find_rightmost_round_number(input_arr) {
+
+var result = 0;
+for (var i = 0; i < input_arr.length; i++)
+{
+  if (input_arr[i] % 10 === 0) {
+    result = i;
+  }
+}
+
+return result;
+}
+
+document.write(find_rightmost_round_number([1, 22, 30, 54, 56]));
+document.write(find_rightmost_round_number([1, 22, 32, 54, 56]));
+document.write(find_rightmost_round_number([1, 22, 32, 54, 50]));
+
+    </script>
+      <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

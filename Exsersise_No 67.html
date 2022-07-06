@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        Ex_No 67
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function test_same_digit(num) {
+  var first = num % 10;
+  while (num) {
+    if (num % 10 !== first) return false;
+num = Math.floor(num / 10);
+  }
+  return true
+}
+
+document.write(test_same_digit(1234));
+document.write(test_same_digit(1111));
+document.write(test_same_digit(22222222));
+
+    </script>
+      <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>

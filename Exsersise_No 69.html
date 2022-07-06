@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        EX_No 69
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function change_case(txt) {
+    var str1 = "";
+    for (var i = 0; i < txt.length; i++) {
+        if (/[A-Z]/.test(txt[i])) str1 += txt[i].toLowerCase();
+        else str1 += txt[i].toUpperCase();
+    }
+    return str1;
+}
+
+document.write(change_case("w3resource"));
+document.write(change_case("Germany"));
+
+    </script>
+      <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+</html>
